@@ -4,7 +4,7 @@ This small project explores how Monte Carlo methods can be used for a variety of
 
 # Files
 
-**CoinFlip** *(.csv)* - R code used to find many coin flips it takes to achieve a given number of consecutive heads or tails.
+**CoinFlip** *(.R)* - R code used to find many coin flips it takes to achieve a given number of consecutive heads or tails.
 
 **CoinFlipPlots** *(.jpeg)* - The plots generated from **CoinFlip**.
 

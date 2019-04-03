@@ -100,7 +100,7 @@ gly <- grid.layout(1500, 2200)
 pushViewport(viewport(layout = gly, gp = gpar(fill = "black")))
 grid.rect(gp = gpar(lwd = 2, fill = "black", col = "black"))
 
-# Place graphs and encolse them in borders
+# Place graphs and enclose them in borders
 print(MCPiPlot, vp = viewport(layout.pos.row = 200:850, layout.pos.col = 50:2150))
 pushViewport(viewport(layout.pos.row = 900:1400, layout.pos.col = 50:550))
 grid.draw(PiPlot100)

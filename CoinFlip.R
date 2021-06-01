@@ -1,4 +1,4 @@
-# ----- Load necessary libraries ------------------------------------------------------------------
+##### Load necessary libraries ----------------------------------------------------------------------------
 
 # Packages for plotting and graphics
 library(tidyverse)
@@ -9,7 +9,7 @@ library(gridBase)
 
 
 
-# ----- Write statistical functions ---------------------------------------------------------------
+##### Write statistical functions -------------------------------------------------------------------------
 
 # Function to calculate number of flips required for n consecutive heads or tails
 CoinFlip <- function(n){
@@ -87,7 +87,7 @@ EV <- function(m, n){
 
 
 
-# ----- Plot EV convergence for select values of n ------------------------------------------------
+##### Plot EV convergence for select values of n ----------------------------------------------------------
 
 # Function to create plots of EV for several different values of n
 EVPlots <- function(n){
@@ -133,7 +133,7 @@ for(j in 3:5){
 
 
 
-# ----- Plot EV as a function of n ----------------------------------------------------------------
+##### Plot EV as a function of n --------------------------------------------------------------------------
 
 # x-values
 val.x <- c(1:6)
@@ -169,7 +169,7 @@ ggplot() + aes(x = val.x, y = val.y) +
 
 
 
-# ----- Plot all graphs in one visualisation ------------------------------------------------------
+##### Plot all graphs in one visualisation ----------------------------------------------------------------
 
 # Prepare graphics device
 jpeg(filename = "CoinFlip.jpeg", width = 1500, height = 1500, units = "px")
@@ -189,7 +189,7 @@ print(PlotN5, vp = viewport(layout.pos.row = 300:675, layout.pos.col = 775:1450)
 print(PlotN4, vp = viewport(layout.pos.row = 688:1063, layout.pos.col = 775:1450))
 print(PlotN3, vp = viewport(layout.pos.row = 1075:1450, layout.pos.col = 775:1450))
 
-# Create coloured borders in which the area graphs will be enclosed
+# Create coloured borders in which the graphs will be enclosed
 pushViewport(viewport(layout.pos.row = 300:1450, layout.pos.col = 50:750))
 grid.rect(gp = gpar(lwd = 2.5, col = "white", fill = "transparent"))
 popViewport()
@@ -246,5 +246,5 @@ dev.off()
 # Note that graphics device may vary between computers
 # Thus, adjustments may need to be made to this code section
 
-# Clean up mess
+# Clean up variables from global environment
 remove(j, val.x, val.y)

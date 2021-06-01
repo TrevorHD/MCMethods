@@ -1,4 +1,4 @@
-# ----- Load necessary libraries ------------------------------------------------------------------
+##### Load necessary libraries ----------------------------------------------------------------------------
 
 # Packages for plotting and graphics
 library(tidyverse)
@@ -9,7 +9,7 @@ library(gridBase)
 
 
 
-# ----- Functions to estimate pi and generate graphics --------------------------------------------
+##### Functions to estimate pi and generate graphics ------------------------------------------------------
 
 # Write function to estimate pi and visualise estimations
 MCPi <- function(n){
@@ -49,7 +49,7 @@ MCPi <- function(n){
 
 
 
-# ----- Estimate pi and show estimations as function of n -----------------------------------------
+##### Estimate pi and show estimations as function of n ---------------------------------------------------
 
 # x-values, spaced for logarithmic x-axis
 val.x <- c(1:9, seq(10, 20, 2), seq(20, 50, 5), seq(60, 90, 10), seq(100, 900, 100),
@@ -86,7 +86,7 @@ ggplot() + aes(x = val.x, y = val.y) +
 
 
 
-# ----- Plot all graphs in one visualisation ------------------------------------------------------
+##### Plot all graphs in one visualisation ----------------------------------------------------------------
 
 # Prepare graphics device
 jpeg(filename = "MCPiPlots.jpeg", width = 2200, height = 1500, units = "px")
@@ -148,6 +148,6 @@ dev.off()
 # Note that graphics device may vary between computers
 # Thus, adjustments may need to be made to this code section
 
-# Clean up mess
+# Clean up variables from global environment
 remove(i, val.x, val.y, vals)
 

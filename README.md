@@ -11,3 +11,9 @@ This small project explores how Monte Carlo methods can be used for a variety of
 **MCPi** *(.R)* - R code used to find many coin flips it takes to estimate the value of pi.
 
 **MCPiPlots** *(.jpeg)* - The plots generated from **MCPi**.
+
+<br/><br/>
+
+![](https://github.com/TrevorHD/MCMethods/blob/master/CoinFlipPlots.jpeg)
+
+![](https://github.com/TrevorHD/MCMethods/blob/master/MCPiPlots.jpeg)

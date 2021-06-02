@@ -6,16 +6,16 @@ Two examples of how Monte Carlo simulation can be applied to solve various probl
 
 # Files
 
-**CoinFlip** *(.R)* - R code used to estimate, via Monte Carlo simulation, the number of flips necessary to achieve a given number of consecutive heads or tails.
-
-**CoinFlipPlots** *(.jpeg)* - A standalone image, embedded below, that shows estimated values and convergence for simulated coin flips.
-
 **MCPi** *(.R)* - R code used to estimate the value of pi via Monte Carlo simulation.
+
+**CoinFlip** *(.R)* - R code used to estimate, via Monte Carlo simulation, the number of flips necessary to achieve a given number of consecutive heads or tails.
 
 **MCPiPlots** *(.jpeg)* - A standalone image, embedded below, that shows values and convergence for the estimate of pi.
 
+**CoinFlipPlots** *(.jpeg)* - A standalone image, embedded below, that shows estimated values and convergence for simulated coin flips.
+
 <br/><br/>
 
-![](https://github.com/TrevorHD/MCMethods/blob/master/CoinFlipPlots.jpeg)
+![](https://github.com/TrevorHD/MCMethods/blob/master/Figures/MCPiPlots.jpeg)
 
-![](https://github.com/TrevorHD/MCMethods/blob/master/MCPiPlots.jpeg)
+![](https://github.com/TrevorHD/MCMethods/blob/master/Figures/CoinFlipPlots.jpeg)

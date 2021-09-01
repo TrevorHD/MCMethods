@@ -22,7 +22,7 @@ A set of examples on how Monte Carlo simulation can be applied to solve various 
 
 # Featured Images
 
-Noteworthy or interesting plots, images, figures, and other graphical outputs from the code are included below.
+The first image shows the results on Monte Carlo simulation to estimate pi; as the number of simulation replicates increases, the estimated value of pi converges on the true value of approximately 3.14. The second image shows the results on Monte Carlo simulation to estimate the number of coin flips needed for a consecutive number of heads or tails; for a given number, estimated results converge on their true values as the number of replications is increased.
 
 <kbd>![](https://github.com/TrevorHD/MCMethods/blob/master/Figures/MCPiPlots.jpeg)</kbd>
 
